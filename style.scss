@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+$font-family: "Roboto", sans-serif;
+$font-size: 16px;
+$primary: #629dd1;
+$primary-hover: #98bcdb;
+$light-gray: #f8f8f8;
+$secondary: #192024;
+$text-color: #666f77;
+$white: #fff;
+$transition: 0.4s all ease-in-out;
+$text-gray: rgba(255, 255, 255, 0.685);
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: $font-family;
+    font-size: $font-size;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    font-weight: 300;
+}
+ul {
+    list-style: none;
+}
+h1,
+h2 {
+    text-transform: uppercase;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+@mixin btn {
+    text-transform: uppercase;
+    padding: 10px 40px;
+    transition: $transition;
+    font-size: 1.2rem;
+    color: $white;
+    letter-spacing: 1.5px;
+    border-radius: 8px;
+}
+
+header {
+    button {
+        @include btn;
+    }
+}
